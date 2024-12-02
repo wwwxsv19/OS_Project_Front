@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
+import * as S from './style.js';
 
-function TextBox({text, style}) {
+const TextBox = forwardRef(({text, type, style, value, onChange}, ref) => {
     return (
-        <div className = "textBox" style = {style}>
-            <p>{text}</p>
-            <input type = "text" placeholder={text} />
+        <div style = {style} >
+            <S.TextBoxP>{text}</S.TextBoxP>
+            <S.TextBoxInput type = {type} placeholder={text} value = {value} onChange = {onChange} ref = {ref} />
         </div>
     );
-}
+});
 
 export default TextBox;
