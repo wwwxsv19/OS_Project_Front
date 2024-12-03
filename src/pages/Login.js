@@ -28,7 +28,6 @@ function LoginPopUp() {
   };
 
   return (
-    /* 텍스트 삽입이 될 것처럼 커서가 들어감. readonly 넣어야겠음 */
     <PgS.LoginPopUp>
       <TextBox text = "userEmail" type = "text" style = {{marginBottom: '30px'}} 
         value = {userEmail} onChange = {(e) => setUserEmail(e.target.value)} ref = {userEmailRef}/>
