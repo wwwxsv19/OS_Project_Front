@@ -1,10 +1,8 @@
-import Login from './pages/Login'
-import Home from './pages/Home'
+import AppRouter from './routes/AppRouter.js';
 
 function App() {
   return (
-      // <Login />
-      <Home />
+    <AppRouter />
   );
 }
 
