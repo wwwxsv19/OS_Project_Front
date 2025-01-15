@@ -14,7 +14,14 @@ export const GreenBtn = styled.button`
 
     transition: all 120ms ease-out;
 
-    &:hover {
+    &:disabled {
+        background-color: #CECECE;
+        color: #6B6B6B;
+
+        cursor: not-allowed;
+    }
+
+    &:not(:disabled):hover {
         background-color: #96B586;
     }
 `

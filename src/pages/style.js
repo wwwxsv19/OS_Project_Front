@@ -3,7 +3,12 @@ import styled from "styled-components";
 // Login.js
 
 export const LoginDiv = styled.div`
-    padding-top: 116px;
+    display: flex; /* Flexbox 사용 */
+    padding-top: 112px;
+    gap: 38px;
+
+    flex-direction: column; /* 세로 방향 */
+    align-items: center; /* 수평 가운데 정렬 */
 `;
 
 export const LoginH1 = styled.h1`
@@ -15,7 +20,8 @@ export const LoginH1 = styled.h1`
 export const LoginPopUp = styled.div`
     display: flex; /* Flexbox 사용 */
     width: 924px; height: 389px;
-    margin: 64px auto 0px; padding: 70px 50px 50px 50px;
+    padding: 50px;
+    gap: 70px;
 
     flex-direction: column; /* 세로 방향 */
     align-items: center; /* 수평 가운데 정렬 */
@@ -27,31 +33,41 @@ export const LoginPopUp = styled.div`
 
 // Home.js
 
-export const HomeH1 = styled.h1`
-    margin: 150px auto 0px;
+export const TechDiv = styled.div`
+    display: flex;
+    width: 100%; padding-top: 150px;
+    flex-direction: column;    
+    gap: 110px;
+`
 
+export const TechTextDiv = styled.div`
+    display: flex;
+    width: 100%;
+    flex-direction: column;    
+    gap: 10px;
+`
+
+export const TechH1 = styled.h1`
     font-size: 60px;
     font-weight: 700; /* Bold */
     text-align: center;
 `;
 
-export const HomeP1 = styled.p`
-    margin: 10px auto 0px auto;
-
+export const TechP1 = styled.p`
     font-size: 24px;
     font-weight: 400; /* Regular */
     text-align: center;
 `
 
-export const HomeP2 = styled.p`
+export const TechP2 = styled.p`
     font-size: 24px;
     font-weight: 700; /* Bold */
     text-align: center;
 `
 
-export const TechDiv = styled.div`
+export const TechItemListDiv = styled.div`
     display: flex;
-    margin-top: 34px;
+    gap: 26px;
 
     flex-direction: row; /* 가로 방향 */
     justify-content: center; /* 가로 중앙 정렬 */

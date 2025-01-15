@@ -1,10 +1,23 @@
 import styled from "styled-components";
 
+// SideBar.js
+
+export const SideBarDiv = styled.div`
+    display: flex;
+    width: 222px; height: 100vh;
+    padding: 20px 0px;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #BCE2A7;
+`
+
+
 // TextBox.js
 
 export const TextBoxP = styled.p`
-    margin: 0;
-
     font-size: 14px;
     font-weight: 700; /* Bold */
     color: #6b6b6b;
@@ -12,15 +25,14 @@ export const TextBoxP = styled.p`
 `
 
 export const TextBoxInput = styled.input`
-    width: 300px;
-    margin-top: 10px;
-    padding: 6px 20px 6px 6px;
+    width: 300px; height: 44px;
+    padding: 6px;
 
     border: 1px solid #bce2a7;
     border-radius: 6px;
     outline: none;
     
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500; /* Medium */
     color: #000000;
     
@@ -41,8 +53,7 @@ export const TextBoxInput = styled.input`
 export const TechItemDiv = styled.div`
     display: flex;
     width: 180px; height: 232px;
-    margin: 0px 13px;
-    padding: 18px 26px;
+    padding: 18px 26px; gap: 20px;
 
     flex-direction: column; /* 세로 방향 */
     align-items: center; /* 수평 가운데 정렬 */
