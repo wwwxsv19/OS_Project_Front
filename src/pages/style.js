@@ -31,11 +31,11 @@ export const LoginPopUp = styled.div`
 `;
 
 
-// Home.js
+// Tech.js
 
 export const TechDiv = styled.div`
     display: flex;
-    width: 100%; padding-top: 150px;
+    width: 88%; padding-top: 150px;
     flex-direction: column;    
     gap: 110px;
 `

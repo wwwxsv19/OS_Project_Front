@@ -4,14 +4,27 @@ import styled from "styled-components";
 
 export const SideBarDiv = styled.div`
     display: flex;
-    width: 222px; height: 100vh;
-    padding: 20px 0px;
+    height: 100vh;
+    padding: 0px 20px;
 
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     background-color: #BCE2A7;
+`
+
+export const SideBarItem = styled.div`
+    display: flex;
+    width: 150px; height: 54px;
+    padding-left: 30px;
+    gap: 10px;
+
+    align-items: center; /* 수평 가운데 정렬 */
+    
+    background-color: #DBEED0; 
+    border-radius: 100px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.25);
 `
 
 

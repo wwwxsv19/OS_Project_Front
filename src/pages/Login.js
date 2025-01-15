@@ -43,7 +43,7 @@ function LoginPopUp() {
       <S.GreenBtn onClick = {LoginHandler} disabled = {!userEmail || !userPassword}>로그인</S.GreenBtn>
       
       {errorMsg && (
-        <p style = {{color: '#C23A3A', marginTop: '38px'}}>{errorMsg}</p>
+        <p style = {{ color: '#C23A3A' }}>{errorMsg}</p>
       )}
     </PgS.LoginPopUp>
   );

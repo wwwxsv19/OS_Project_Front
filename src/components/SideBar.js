@@ -4,9 +4,21 @@ import testImage from '../assets/testImg.jpg';
 
 function SideBarItem () {
     return (
-        <div style = {{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+        <S.SideBarItem>
             <img src = {testImage} alt = 'TestImage' width = '30px' height = '30px'></img>
-            <p>sideBarItem</p>
+            <p style = {{ fontSize: '16px', fontWeight: '700' }}>name</p>
+        </S.SideBarItem>
+    )
+}
+
+function SideBarItemList() {
+    return (
+        <div style = {{ display: 'flex', flexDirection: 'column', gap: '10px'}}>
+            <p style = {{ fontSize: '16px', fontWeight: '700', color: '#000000' }}>itemListName</p>
+            <div style = {{ display: 'flex', flexDirection: 'column', gap: '20px'}}>
+                <SideBarItem></SideBarItem>
+                <SideBarItem></SideBarItem>
+            </div>
         </div>
     )
 }
@@ -14,8 +26,7 @@ function SideBarItem () {
 function SideBar() {
     return (
         <S.SideBarDiv>
-            <SideBarItem></SideBarItem>
-            <SideBarItem></SideBarItem>
+            <SideBarItemList></SideBarItemList>
         </S.SideBarDiv>
     )
 }
