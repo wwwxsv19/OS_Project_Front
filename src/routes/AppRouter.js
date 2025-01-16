@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import SideBar from '../components/SideBar.js';
+import SideBar from '../components/sideBar/SideBar.js';
 import Login from '../pages/Login.js';
 import Tech from '../pages/Tech.js';
 

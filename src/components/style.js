@@ -1,20 +1,48 @@
 import styled from "styled-components";
 
-// SideBar.js
+// SideBarProfile.js
 
-export const SideBarDiv = styled.div`
+export const SideBarProfileDiv = styled.div`
     display: flex;
-    height: 100vh;
-    padding: 0px 20px;
+    gap: 14px;
 
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
-    background-color: #BCE2A7;
 `
 
-export const SideBarItem = styled.div`
+export const SideBarProfileImg = styled.img`
+    width: 100px; height: 100px;
+
+    border: 1px solid #DBEED0;
+    border-radius: 100px;
+
+    alt: 'ProfileImg';
+`
+
+export const SideBarProfileP = styled.p`
+    font-size: 20px;
+    font-weight: 700;
+`
+
+
+// SideBarGreenItem.js
+
+export const SideBarGreenButtonListDivP = styled.div`
+    display: flex;
+    padding: 0px 20px;
+    gap: 10px;
+
+    flex-direction: column;
+`
+
+export const SideBarGreenButtonListDivC = styled.div`
+    display: flex;
+    gap: 20px;
+
+    flex-direction: column;
+`
+
+export const SideBarGreenButtonDiv = styled.div`
     display: flex;
     width: 150px; height: 54px;
     padding-left: 30px;
@@ -25,6 +53,57 @@ export const SideBarItem = styled.div`
     background-color: #DBEED0; 
     border-radius: 100px;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.25);
+`
+
+export const SideBarGreenButtonP = styled.p`
+    font-size: 16px;
+    font-weight: 700;
+`
+
+export const SideBarListP = styled.p`
+    font-size: 18px;
+    font-weight: 700;
+`
+
+
+// SideBarGrayButton.js
+
+export const SideBarGrayButtonDiv = styled.div`
+    display: flex;
+    width: 172px; height: 32px;
+    padding: 4px; 
+    gap: 10px;
+
+    align-items: center;
+`
+
+export const SideBarGrayButtonP = styled.p`
+    color: #6B6B6B;
+    font-size: 16px;
+    font-weight: 700;
+`
+
+export const SideBarGrayButtonListDivP = styled.div`
+    display: flex;
+    padding: 0px 20px;
+    gap: 10px;
+
+    flex-direction: column;
+`
+
+
+// SideBar.js
+
+export const SideBarDiv = styled.div`
+    display: flex;
+    height: 100vh;
+    gap: 50px;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #BCE2A7;
 `
 
 

@@ -35,7 +35,7 @@ export const LoginPopUp = styled.div`
 
 export const TechDiv = styled.div`
     display: flex;
-    width: 88%; padding-top: 150px;
+    width: 100vw; padding-top: 150px;
     flex-direction: column;    
     gap: 110px;
 `
