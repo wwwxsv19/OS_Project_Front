@@ -4,7 +4,7 @@ import TextBox from '../components/TextBox';
 import * as PgS from './style.js';
 import * as S from '../styles/style.js';
 
-import { ReactComponent as Myo } from '../assets/myo.svg';
+import { ReactComponent as Myo } from '../assets/icons/myo.svg';
 
 function LoginPopUp() {
   const [userEmail, setUserEmail] = useState('');

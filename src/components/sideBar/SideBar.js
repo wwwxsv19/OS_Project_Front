@@ -4,11 +4,11 @@ import SideBarProfile from './SideBarProfile.js';
 import SideBarGreenButtonList from './SideBarGreenButton.js';
 import SideBarGrayButtonList from './SideBarGrayButton.js';
 
-import { ReactComponent as Myo } from '../../assets/myo.svg';
-import { ReactComponent as HomeIcon } from '../../assets/home.svg';
-import { ReactComponent as SettingIcon } from '../../assets/setting.svg';
-import { ReactComponent as QuestionIcon } from '../../assets/question.svg';
-import { ReactComponent as DevelopIcon } from '../../assets/develop.svg';
+import { ReactComponent as Myo } from '../../assets/icons/myo.svg';
+import { ReactComponent as HomeIcon } from '../../assets/icons/home.svg';
+import { ReactComponent as SettingIcon } from '../../assets/icons/setting.svg';
+import { ReactComponent as QuestionIcon } from '../../assets/icons/question.svg';
+import { ReactComponent as DevelopIcon } from '../../assets/icons/develop.svg';
 
 function DefaultButtonList() {
     const listName = ''

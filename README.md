@@ -1,4 +1,4 @@
-# OS Project 'MEMO' Front 
+# OS Project 'MEMYO' Front 
 
 ### `npm start`
 

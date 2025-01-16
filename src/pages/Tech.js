@@ -2,10 +2,10 @@ import TechItem from '../components/TechItem.js';
 import * as S from './style.js';
 
 // SVG
-import { ReactComponent as ReactIcon } from '../assets/react.svg';
-import { ReactComponent as SpringIcon } from '../assets/spring.svg';
-import { ReactComponent as MysqlIcon } from '../assets/mysql.svg';
-import { ReactComponent as FigmaIcon } from '../assets/figma.svg';
+import { ReactComponent as ReactIcon } from '../assets/icons/react.svg';
+import { ReactComponent as SpringIcon } from '../assets/icons/spring.svg';
+import { ReactComponent as MysqlIcon } from '../assets/icons/mysql.svg';
+import { ReactComponent as FigmaIcon } from '../assets/icons/figma.svg';
 
 function TechItemList() {
     return (

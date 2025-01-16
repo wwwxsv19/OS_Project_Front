@@ -1,6 +1,6 @@
 import * as S from '../style.js';
 
-import defaultImg from '../../assets/profile.jpg';
+import defaultImg from '../../assets/imgs/profile.jpg';
 
 function SideBarProfile({ userImg, userName }) {
     return (

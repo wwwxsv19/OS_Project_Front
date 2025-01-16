@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+
 import * as S from './style.js';
 
 const TextBox = forwardRef(({text, type, value, onChange}, ref) => {
