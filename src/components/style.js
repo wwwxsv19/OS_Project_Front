@@ -53,6 +53,12 @@ export const SideBarGreenButtonDiv = styled.div`
     background-color: #DBEED0; 
     border-radius: 100px;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.25);
+
+    transition : background-color 0.2s ease-out;
+
+    &:hover {
+        background-color: #C9E6B9; 
+    }
 `
 
 export const SideBarGreenButtonP = styled.p`
@@ -75,6 +81,17 @@ export const SideBarGrayButtonDiv = styled.div`
     gap: 10px;
 
     align-items: center;
+
+    & > * {
+        transition : color 0.2s ease-out, fill 0.2s ease-out;
+    }
+
+    &:hover {
+        & > * {
+            color: #000000;
+            fill: #000000;         
+        }
+    }
 `
 
 export const SideBarGrayButtonP = styled.p`
