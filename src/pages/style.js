@@ -98,7 +98,7 @@ export const TechItemListDiv = styled.div`
 export const NewDiv = styled.div`
     display: flex;
     gap: 30px;
-    margin: 54px 100px;
+    margin: 54px auto;
 
     flex-direction: column;
 `
@@ -106,7 +106,7 @@ export const NewDiv = styled.div`
 export const NewHeaderDiv = styled.div`
     display: flex;
     position: relative;
-    width: 1018px;
+    width: 1218px;
     gap: auto;
 
     flex-direction: row;   

@@ -1,8 +1,8 @@
 import * as S from './style.js'; 
 
-import TitleInput from '../components/new/TitleInput.js';
-import ExplainInput from '../components/new/ExplainInput.js';
-import ContentInput from '../components/new/ContentInput.js';
+import TitleInput from '../components/input/TitleInput.js';
+import ExplainInput from '../components/input/ExplainInput.js';
+import ContentInput from '../components/input/ContentInput.js';
 import GreenButton from '../components/button/GreenButton.js';
 import WhiteButton from '../components/button/WhiteButton.js';
 

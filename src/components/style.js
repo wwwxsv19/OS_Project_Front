@@ -267,7 +267,7 @@ export const TitleInput = styled.input`
 // ExplainInput.js
 
 export const ExplainInput = styled.input`
-    width: 1018px;
+    width: 1218px;
     
     border: none;
 
@@ -288,17 +288,17 @@ export const ExplainInput = styled.input`
 // ContentInput.js
 
 export const ContentDiv = styled.div`
-    width: 976px; height: 636px;
+    width: 1178px; height: 636px;
     padding: 20px;
 
     border: 1px solid #BCE2A7;
     border-radius: 10px;
 `
 
-export const ContentTextarea = styled.p`
+export const ContentTextP = styled.p`
     contenteditable: true;
 
-    width: 976px;
+    width: 996px;
     height: 636px;
 
     border: none;

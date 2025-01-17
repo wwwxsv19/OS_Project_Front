@@ -15,6 +15,7 @@ function DefaultButtonList() {
     const count = 1;
     const iconList = [HomeIcon];
     const buttonNameList = ['홈'];
+    const pathList = ['/new']
     
     return (
         <SideBarGreenButtonList
@@ -22,6 +23,7 @@ function DefaultButtonList() {
             count = {count} 
             iconList = {iconList}
             buttonNameList = {buttonNameList}
+            pathList = {pathList}
         />
     )
 }
@@ -29,10 +31,11 @@ function DefaultButtonList() {
 function PageButtonList() {
     const listName = '내 메묘'
     
-    // 불러온 메모 수에 맞게 count, iconList 업데이트
+    // 불러온 메모 데이터에 맞게 count, iconList, pathList 업데이트
     const count = 4;
     const iconList = [Myo, Myo, Myo, Myo];
     const buttonNameList = ['메묘 1', '메묘 2', '메묘 3', '메묘 4'];
+    const pathList = ['/1', '/2', '/3', '/4']
     
     return (
         <SideBarGreenButtonList
@@ -40,6 +43,7 @@ function PageButtonList() {
             count = {count} 
             iconList = {iconList}
             buttonNameList = {buttonNameList}
+            pathList= {pathList}
         />
     )
 }
@@ -48,12 +52,14 @@ function ETCButtonList() {
     const count = 3;
     const iconList = [SettingIcon, QuestionIcon, DevelopIcon];
     const buttonNameList = ['설정', '문의하기', '개발 과정 보기'];
+    const pathList = ['/setting', '/question', '/']
 
     return (
         <SideBarGrayButtonList
             count = {count}
             iconList = {iconList}
             buttonNameList = {buttonNameList}
+            pathList = {pathList}
         />
     )
 }
