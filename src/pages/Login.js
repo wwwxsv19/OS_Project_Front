@@ -1,12 +1,13 @@
 import { useState, useRef } from 'react'; 
 
+import * as S from './style.js';
+
 import TextBox from '../components/TextBox';
-import * as PgS from './style.js';
-import * as S from '../styles/style.js';
+import GreenButton from '../components/button/GreenButton.js';
 
 import { ReactComponent as Myo } from '../assets/icons/myo.svg';
 
-function LoginPopUp() {
+function LoginPopUpDiv() {
   const [userEmail, setUserEmail] = useState('');
   const [userPassword, setUserPassword] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
@@ -31,33 +32,33 @@ function LoginPopUp() {
   };
 
   return (
-    <PgS.LoginPopUp>
-      <div style = {{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
+    <S.LoginPopUpDiv>
+      <S.LoginPopUpTextBoxListDiv>
         <TextBox text = "이메일" type = "text" 
           value = {userEmail} onChange = {(e) => setUserEmail(e.target.value)} ref = {userEmailRef}/>
 
         <TextBox text = "비밀번호" type = "password" 
           value = {userPassword} onChange = {(e) => setUserPassword(e.target.value)} ref = {userPasswordRef}/>
-      </div>
+      </S.LoginPopUpTextBoxListDiv>
 
-      <S.GreenBtn onClick = {LoginHandler} disabled = {!userEmail || !userPassword}>로그인</S.GreenBtn>
+      <GreenButton text = {"로그인"} onClick = {LoginHandler} disabled = {!userEmail || !userPassword}>로그인</GreenButton>
       
       {errorMsg && (
-        <p style = {{ color: '#C23A3A' }}>{errorMsg}</p>
+        <S.LoginErrorP>{errorMsg}</S.LoginErrorP>
       )}
-    </PgS.LoginPopUp>
+    </S.LoginPopUpDiv>
   );
 }
 
 function Login() {
   return (
-    <PgS.LoginDiv>
-      <div style = {{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
+    <S.LoginDiv>
+      <S.LoginTextP>
         <Myo style = {{ width: '150px', height: '150px' }}></Myo>
-        <PgS.LoginH1>반가워요, MEMYO를 시작해 볼까요?</PgS.LoginH1>
-      </div>
-      <LoginPopUp />
-    </PgS.LoginDiv>
+        <S.LoginH1>반가워요, MEMYO를 시작해 볼까요?</S.LoginH1>
+      </S.LoginTextP>
+      <LoginPopUpDiv />
+    </S.LoginDiv>
   );
 }
 

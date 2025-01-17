@@ -1,5 +1,63 @@
 import styled from "styled-components";
 
+// GreenButton.js
+
+export const GreenBtn = styled.button` 
+    width: 168px; height: 62px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 10px;
+    background-color: #BCE2A7;
+
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+
+    transition: all 120ms ease-out;
+
+    &:disabled {
+        background-color: #CECECE;
+        color: #6B6B6B;
+
+        cursor: not-allowed;
+    }
+
+    &:not(:disabled):hover {
+        background-color: #96B586;
+    }
+`
+
+
+// WhiteButton.js
+
+export const WhiteBtn = styled.button` 
+    width: 168px; height: 62px;
+    padding: 10px;
+
+    border: 1px solid #BCE2A7;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+
+    transition: all 120ms ease-out;
+
+    &:disabled {
+        background-color: #CECECE;
+        color: #6B6B6B;
+
+        cursor: not-allowed;
+    }
+
+    &:not(:disabled):hover {
+        background-color: #EAEAEA;
+    }
+`
+
+
 // SideBarProfile.js
 
 export const SideBarProfileDiv = styled.div`
@@ -83,7 +141,7 @@ export const SideBarGrayButtonDiv = styled.div`
     align-items: center;
 
     & > * {
-        transition : color 0.2s ease-out, fill 0.2s ease-out;
+        transition : all 0.2s ease-out;
     }
 
     &:hover {
@@ -137,7 +195,7 @@ export const TextBoxInput = styled.input`
     width: 300px; height: 44px;
     padding: 6px;
 
-    border: 1px solid #bce2a7;
+    border: 1px solid #BCE2A7;
     border-radius: 6px;
     outline: none;
     
@@ -148,11 +206,11 @@ export const TextBoxInput = styled.input`
     &::placeholder {
         font-size: 20px;
         font-weight: 400; /* Regular */
-        color: #cecece;   
+        color: #CECECE;   
     }
 
     &:focus {
-        outline: 1.5px solid #bce2a7;
+        outline: 1.5px solid #BCE2A7;
     }
 `;
 
@@ -184,4 +242,77 @@ export const TechItemP = styled.p`
     color: #000000;
 
     text-align: center
+`
+
+
+// TitleInput.js
+
+export const TitleInput = styled.input`
+    border: none;
+
+    color: #000000;
+    font-size: 50px;
+    font-weight: 700;
+
+    &::placeholder {
+        color: #CECECE;
+    }
+
+    &:focus {
+        outline: none;
+    }
+`
+
+
+// ExplainInput.js
+
+export const ExplainInput = styled.input`
+    width: 1018px;
+    
+    border: none;
+
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+
+    &::placeholder {
+        color: #CECECE;
+    }
+
+    &:focus {
+        outline: none;
+    }
+`
+
+
+// ContentInput.js
+
+export const ContentDiv = styled.div`
+    width: 976px; height: 636px;
+    padding: 20px;
+
+    border: 1px solid #BCE2A7;
+    border-radius: 10px;
+`
+
+export const ContentTextarea = styled.p`
+    contenteditable: true;
+
+    width: 976px;
+    height: 636px;
+
+    border: none;
+
+    color: #000000;
+    font-size: 26px;
+    font-weight: 300px;
+
+    &:empty::before {
+        content: attr(placeholder); 
+        color: #CECECE;
+    }
+
+    &:focus {
+        outline: none;
+    }
 `
